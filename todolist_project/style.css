@@ -1,0 +1,32 @@
+#title {
+    outline: 2px solid black;
+    text-align: center;
+}
+
+#title, #new_item{
+    padding: 5px 0px;
+    width: 70%;
+    margin: auto;
+}
+
+#new_item{
+    display:flex;
+}
+#text_area{
+    flex: 9;
+    line-height: 3;
+}
+#add_item{
+    flex: 1;
+}
+
+.item{
+    outline: 2px solid black;
+    padding: 5px;
+    width: fit-content;
+}
+
+.theline{
+    background-color: black;
+}
+
