@@ -3,7 +3,7 @@
     text-align: center;
 }
 
-#title, #new_item{
+#title, #new_item, #error{
     padding: 5px 0px;
     width: 70%;
     margin: auto;
@@ -54,5 +54,12 @@
     position: absolute;
     left: 1%;
     width: fit-content;
+}
+
+#error{
+    color: #D8000C;
+    background-color: #FFBABA;
+    border: 1px solid;
+    padding: 5px;
 }
 

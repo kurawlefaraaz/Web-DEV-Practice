@@ -6,7 +6,19 @@ const lines = document.getElementsByClassName("theline");
 
 var index = 1;
 
+const error_div = document.createElement("div");
+error_div.innerText = "Error: Empty Item is prohibhited."
+error_div.setAttribute("id", "error")
+
+
 function add_item(){
+    console.log(error_div)
+    if (text_area.value == ""){
+        document.body.appendChild(error_div);
+        setTimeout(() => document.getElementById("error").remove(), 2000);
+        return 1;
+    }
+
     var item_line = document.createElement("span");
     item_line.setAttribute("class", `item_line ${index}`);
     items_container.appendChild(item_line);
