@@ -10,11 +10,10 @@
 }
 
 #items{
-    /* position: absolute; */
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding: 0px 0px 0px 3%;
+    padding: 0px 0px 0px 2.6%;
     margin: 2% 0%;
 }
 
@@ -37,17 +36,13 @@
 
 #hline{
     width: 12%;
-    height: 10px;
 }
 
 #vline{
-    width: 10px ;
-    height: 11%;
+    height: 10%;
 }
 
 .item{
-    /* display: inline;  */
-    /* position: absolute; */
     float: inline-start;
     outline: 2px solid black;
     padding: 5px 20px;
@@ -55,9 +50,10 @@
 }
 
 .item_line{
+    outline: 2px dashed black;
     float: inline-start;
-    width: 2%;
-    height: 10px;
+    width: 3%;
+    height: 1px;
     background-color: black;
 }
 

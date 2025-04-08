@@ -32,12 +32,13 @@ function add_item(){
     items_container.appendChild(container);
 
     var rect = item.getBoundingClientRect();
-    vline.style.height= `${rect.y - 20}px`;
+    vline.style.height= `${rect.y - 28}px`;
     
     for (let i = 0; i < lines.length; i++) {
-        lines[i].style.backgroundColor = "black";
+        lines[i].style.outline= "2px dashed black";
     }
 
+    text_area.value = "";
     item_index++;
 }
 
@@ -49,11 +50,10 @@ function remove_item(e){
     var lastc = items_container.lastChild
     if (lastc){
         var rect = lastc.getBoundingClientRect();
-        vline.style.height= `${rect.y - 20}px`;
-        vline.style.textDecorationLine= `${rect.y - 20}px`;
+        vline.style.height= `${rect.y - 28}px`;
     } else{
         for (let i = 0; i < lines.length; i++) {
-            lines[i].style.backgroundColor = "white";
+            lines[i].style.outline = "2px dashed white";
         }
     }
 }
@@ -68,5 +68,4 @@ function item_done(e){
     } else {
         ele.lastChild.style.textDecorationLine = "line-through";
     }
-    // ele.lastChild.style.text = "line-through";
 }
