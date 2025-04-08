@@ -24,9 +24,22 @@
     outline: 2px solid black;
     padding: 5px;
     width: fit-content;
+    margin: 5%;
 }
 
 .theline{
-    background-color: black;
+    position: absolute;
+    top: 30px;
+    left: 3%;
+}
+
+#hline{
+    width: 12%;
+    height: 10px;
+}
+
+#vline{
+    width: 10px ;
+    height: 10%;
 }
 
