@@ -11,7 +11,6 @@ error_div.innerText = "Error: Empty Item is prohibhited."
 error_div.remove()
 
 function add_item(){
-    console.log(error_div)
     if (text_area.value == ""){
         document.body.appendChild(error_div);
         setTimeout(() => error_div.remove(), 2000);
