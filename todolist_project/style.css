@@ -9,6 +9,15 @@
     margin: auto;
 }
 
+#items{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0px 0px 0px 3%;
+    margin: 2% 0%;
+}
+
 #new_item{
     display:flex;
 }
@@ -33,33 +42,26 @@
 
 #vline{
     width: 10px ;
-    height: 10%;
+    height: 11%;
 }
 
 .item{
+    /* display: inline;  */
+    /* position: absolute; */
+    float: inline-start;
     outline: 2px solid black;
-    height: 20%;
-    padding: 5px;
-    margin: 5%;
+    padding: 5px 20px;
+    width: 90%;
 }
+
 .item_line{
-    position: absolute;
-    left: 3%;
+    float: inline-start;
     width: 2%;
     height: 10px;
     background-color: black;
 }
 
-.item_index{
-    position: absolute;
-    left: 1%;
-    width: fit-content;
-}
-
 #error{
-    color: #D8000C;
-    background-color: #FFBABA;
-    border: 1px solid;
-    padding: 5px;
+    text-align: center;
+    height: 10px;
 }
-
